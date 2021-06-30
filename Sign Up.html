@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>HTML CSS Form exercise</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* Some of the CSS tags are provided you need to add more to get the desired effect of the final output */
+
+body {font-family: gill sans;}
+
+.container {
+  width: 600px;
+  height: 800px;  
+  padding: 10px;
+  
+  background-color: beige;
+  margin:0 auto;
+}
+
+.btn-submit {background-color: red; color: white; font-size: 15px; font-weight: bold;}
+.btn-reset  {background-color: blue; color: white; font-size: 15px; font-weight: bold;}
+
+h4 {color: red;}
+h1 {text-align: center;}
+
+fieldset { 
+          display: block;
+          margin-left: 2px;
+          margin-right: 2px;
+          padding-top: 0.35em;
+          padding-bottom: 0.625em;
+          padding-left: 0.75em;
+          padding-right: 0.75em;
+          border: 8px groove (internal value); }
+
+</style>
+</head>
+
+<!-- Please insert the relevant HTML code as indicated by the comments. Do not change the order -->
+
+<body>
+
+<div class="container">
+
+
+    <h1>Tropical Treats Register Form</h1>
+    
+    <form name="myForm" action="./action_page.php" onsubmit="return validateForm()" method="POST">
+
+<!-- insert the HTML tags for fieldset block for fullname, email and date of birth below -->
+      <fieldset>
+            <p class="detail" class="title_big">Personal Details</p> <br>
+            <div class="line">
+                  <label for="fullName" class="title top">Full name<span class="red">*</span>:</label>
+                  <input name="fullName" type="text" class="right" placeholder="Full Name"> <br>
+            </div>
+            <br>
+            <div class="line">
+                  <label for="Email" class="title top">Email<span class="red">*</span>:</label>
+                  <input name="email" type="text" class="right" placeholder="email@gmail.com"> <br>
+            </div>
+			<br>
+			<div class="line">
+                  <label for="Phone Number" class="title top">Phone Number<span class="red">*</span>:</label>
+                  <input name="phonenumber" type="text" class="right" placeholder="0123456789"> <br>
+            </div>
+            <br>
+            <div class="line">
+                  <label for="dayBirth" class="title top">Date of Birth: </label>
+                  <input name="birth" type="date" class="right">
+            </div>
+            
+            
+            
+      </fieldset>
+      
+
+<!-- insert the HTML tags for drop down list for selecting tour package below -->
+<br>
+     
+      
+
+<!-- insert the HTML tags for drop down list for number of persons below -->
+
+    
+
+<!-- insert the HTML tags for arrival date input type date below -->
+      <label class="title">Customer Interests</label> <br>
+      <br>
+      <div class="line">
+      <p class="check">Caramel Slice</p><input type="checkbox" class="checkbox1" name="caramelslice">
+      </div><br>
+      <div class="line">
+      <p class="check">Cherry Ripe Slice</p><input type="checkbox" class="checkbox2"  name="cherryripeslice">
+      </div><br>
+      <div class="line">
+      <p class="check">Raspberry Cheese Cake</p><input type="checkbox" class="checkbox3"  name="raspberrycheesecake">
+      </div><br>
+      <div class="line">
+      <p class="check">Lemon Meringue Pie</p><input type="checkbox" class="checkbox4"  name="lemonmeringuepie">
+      </div><br>
+	 
+      <br>
+
+
+<!-- insert the HTML tags for terms and conditions with input type radio below -->
+     
+<!-- insert the HTML tags for additional information input type text below -->
+      <br>
+      <br>
+      <p class="title">Please provide any additional information below:</p>
+      <br>
+      <textarea name="message" rows="5" cols="45" placeholder="Please type here...."></textarea><br><br>
+
+<!-- insert the HTML tags for submit and reset buttons with input type submit and reset below -->
+      <button class="btn-submit">Submit</button>
+      <button class="btn-reset">Reset</button>
+      
+    </form>
+</div>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
